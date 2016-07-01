@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lånekalkyl</title>
+
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+
+    <div class="calculator">
+        <h1>Lånekalkyl</h1>
+
+        <div class="result">
+            <h2>Exempel på månadskostnad</h2>
+            <span>
+                <span id="costPres"></span> SEK / mån
+            </span>
+        </div>
+
+        <h3>Lånebelopp</h3>
+        <div class="slider">
+            <input id="amountSlider" type="range" min="20000" max="200000" step="10000">
+            <progress id="amountProgress" value="100000"  max="180000"></progress>
+            <span>20 000 kr</span>
+            <span>200 000 kr</span>
+        </div>
+        <span class="currentValue">
+            <span id="amountPres"></span> kr
+        </span>
+
+        <h3>Lånetid</h3>
+        <div class="slider">
+            <input id="periodSlider" type="range" min="2" max="10" step="1"/>
+            <progress id="periodProgress" value="4"  max="8"></progress>
+            <span>2 år</span>
+            <span>10 år</span>
+        </div>
+        <span class="currentValue">
+            <span id="periodPres"></span> år
+        </span>
+
+        <a class="btn" id="redirect" target="_blank">Till ansökan</a>
+    </div>
+
+
+    <script src="js/index.js" charset="UTF-8"></script>
+</body>
+</html>
+
